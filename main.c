@@ -13,25 +13,6 @@
 #define MINO_TYPE_MAX 7
 #define MINO_ANGLE_MAX 4
 
-//enum {
-//    MINO_TYPE_I,
-//    MINO_TYPE_O,
-//    MINO_TYPE_S,
-//    MINO_TYPE_Z,
-//    MINO_TYPE_J,
-//    MINO_TYPE_L,
-//    MINO_TYPE_T,
-//    MINO_TYPE_MAX
-//};
-//
-//enum {
-//    MINO_ANGLE_0,
-//    MINO_ANGLE_90,
-//    MINO_ANGLE_180,
-//    MINO_ANGLE_270,
-//    MINO_ANGLE_MAX
-//};
-
 #define MINO_WIDTH 4
 #define MINO_HEIGHT 4
 
@@ -40,25 +21,28 @@ char displayBuffer[FIELD_HEIGHT][FIELD_WIDTH];
 
 char minoShapes[MINO_TYPE_MAX][MINO_ANGLE_MAX][MINO_HEIGHT][MINO_WIDTH] = {
         {
-                // MINO_TYPE_I
+                // MINO_ANGLE_0
                 {
                         0, 1, 0, 0,
                         0, 1, 0, 0,
                         0, 1, 0, 0,
                         0, 1, 0, 0,
                 },
+                // MINO_ANGLE_90
                 {
                         0, 0, 0, 0,
                         0, 0, 0, 0,
                         1, 1, 1, 1,
                         0, 0, 0, 0,
                 },
+                // MINO_ANGLE_180
                 {
                         0, 0, 1, 0,
                         0, 0, 1, 0,
                         0, 0, 1, 0,
                         0, 0, 1, 0,
                 },
+                // MINO_ANGLE_270
                 {
                         0, 0, 0, 0,
                         1, 1, 1, 1,
@@ -66,8 +50,8 @@ char minoShapes[MINO_TYPE_MAX][MINO_ANGLE_MAX][MINO_HEIGHT][MINO_WIDTH] = {
                         0, 0, 0, 0,
                 },
         },
+        // MINO_TYPE_O
         {
-                // MINO_TYPE_O
                 {
                         0, 0, 0, 0,
                         0, 1, 1, 0,
@@ -93,8 +77,8 @@ char minoShapes[MINO_TYPE_MAX][MINO_ANGLE_MAX][MINO_HEIGHT][MINO_WIDTH] = {
                         0, 0, 0, 0,
                 },
         },
+        // MINO_TYPE_S
         {
-                // MINO_TYPE_S
                 {
                         0, 0, 0, 0,
                         0, 1, 1, 0,
@@ -120,8 +104,8 @@ char minoShapes[MINO_TYPE_MAX][MINO_ANGLE_MAX][MINO_HEIGHT][MINO_WIDTH] = {
                         0, 0, 0, 0,
                 },
         },
+        // MINO_TYPE_Z
         {
-                // MINO_TYPE_Z
                 {
                         0, 0, 0, 0,
                         1, 1, 0, 0,
@@ -147,8 +131,8 @@ char minoShapes[MINO_TYPE_MAX][MINO_ANGLE_MAX][MINO_HEIGHT][MINO_WIDTH] = {
                         0, 0, 0, 0,
                 },
         },
+        // MINO_TYPE_J
         {
-                // MINO_TYPE_J
                 {
                         0, 0, 1, 0,
                         0, 0, 1, 0,
@@ -174,6 +158,7 @@ char minoShapes[MINO_TYPE_MAX][MINO_ANGLE_MAX][MINO_HEIGHT][MINO_WIDTH] = {
                         0, 0, 0, 0,
                 },
         },
+        // MINO_TYPE_L
         {
                 {
                         0, 1, 0, 0,
@@ -200,6 +185,7 @@ char minoShapes[MINO_TYPE_MAX][MINO_ANGLE_MAX][MINO_HEIGHT][MINO_WIDTH] = {
                         0, 0, 0, 0,
                 },
         },
+        // MINO_TYPE_T
         {
                 {
                         0, 0, 0, 0,
